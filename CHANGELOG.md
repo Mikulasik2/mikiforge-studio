@@ -1,5 +1,9 @@
 # Zmeny
 
+## v0.2.3 — 27. 10. 2026
+- Meno Martin Mikulášik iba tam, kde je nevyhnutné: ochrana osobných údajov a malým písmom v pätičke.
+- Odstránené z titulku stránky, popisov pre vyhľadávače a náhľady odkazov, sekcie O štúdiu, nadpisu kontaktu a obrázka náhľadu (nový súbor og-image-v2.jpg).
+
 ## v0.2.2 — 27. 10. 2026
 - Prepísané texty pre úspešných podnikateľov: bez tónu „pomoci“, dôraz na férovú výmenu (web ↔ referencia) a na minimum času od firmy.
 - Nadpis „3 firmy. 3 weby na mieru.“, nový odsek „Prečo bez odmeny?“, upravené kroky spolupráce, otázky a formulár („Čo by mal web ukázať alebo priniesť“).
