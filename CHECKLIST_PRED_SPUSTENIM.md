@@ -3,7 +3,7 @@
 Odškrtávajte postupne. Kým nie sú hotové body 1–6, web môže byť verejne dostupný len ako ukážka (formulár v demo režime nič neodosiela).
 
 ## 1. Doména a kontakt
-- [ ] Vybraná a zaregistrovaná finálna doména.
+- [x] Vybraná a zaregistrovaná finálna doména. (mikiforge.sk)
 - [ ] Funkčná e-mailová schránka; doplnená do `config.js` → `contact.email`.
 - [ ] (Voliteľne) telefón do `contact.phone`.
 - [ ] Rozhodnutý statický hosting; web nahraný a otestovaný na doméne cez HTTPS.
@@ -36,8 +36,8 @@ Odškrtávajte postupne. Kým nie sú hotové body 1–6, web môže byť verejn
 
 ## 7. Metadáta a indexovanie
 - [ ] V `index.html` zmeniť `<meta name="robots" content="noindex, nofollow">` na `index, follow` (stránku ochrany údajov môžete nechať `noindex`).
-- [ ] Doplniť `<link rel="canonical" href="https://vasadomena.sk/">`.
-- [ ] Doplniť `<meta property="og:url" content="https://vasadomena.sk/">` a zmeniť `og:image` na absolútnu adresu `https://vasadomena.sk/assets/img/brand/og-image.jpg`.
-- [ ] Vytvoriť `robots.txt` a `sitemap.xml` so skutočnou doménou.
+- [x] Doplniť `<link rel="canonical" href="https://vasadomena.sk/">`.
+- [x] `og:url` a absolútna `og:image` pre mikiforge.sk.
+- [x] Vytvoriť `robots.txt` a `sitemap.xml` so skutočnou doménou.
 - [ ] Overiť náhľad odkazu (napr. vložením do e-mailu/Messengera) a validitu v PageSpeed Insights.
 - [ ] Zmeniť v pätičke „pracovná verzia v0.1“ a v `CHANGELOG.md` zapísať verziu.

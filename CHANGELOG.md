@@ -1,5 +1,11 @@
 # Zmeny
 
+## v0.1.1 — 27. 10. 2026
+- Pripojená doména mikiforge.sk (GitHub Pages, DNS u WebSupportu).
+- Súbor `CNAME`, `robots.txt`, `sitemap.xml`.
+- Doplnené `canonical`, `og:url` a absolútna adresa `og:image`.
+- `noindex` zatiaľ ponechaný — zrušiť po doplnení kontaktu a ochrany osobných údajov.
+
 ## v0.1 — 27. 10. 2026
 Prvá pracovná verzia webu MikiForge Studio.
 
