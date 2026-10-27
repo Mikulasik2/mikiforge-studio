@@ -168,12 +168,18 @@
     submitLabel.textContent = idleLabel;
     submit.disabled = false;
 
+    if (!mode.live) {
+      // demo režim: poctivé texty (HTML obsahuje texty pre ostrý režim)
+      document.getElementById("form-mode-title").textContent = "Ukážka prihlášky — prihlasovanie zatiaľ nie je otvorené";
+      document.getElementById("form-mode-text").textContent = "Formulár si môžete vyskúšať. Údaje sa iba skontrolujú priamo vo vašom prehliadači a nikam sa neodošlú ani neuložia.";
+      document.getElementById("form-legal").textContent = "V ukážke sa nič neodosiela.";
+    }
+
     if (mode.live) {
       var box = document.getElementById("form-mode");
       box.classList.add("is-live");
       document.getElementById("form-mode-title").textContent = "Prihlasovanie je otvorené";
-      document.getElementById("form-mode-text").textContent = "Po odoslaní vám potvrdenie zobrazím až vtedy, keď prihlášku prijme server.";
-      document.getElementById("form-legal").textContent = "Odoslaním beriete na vedomie informácie o spracúvaní osobných údajov. Údaje použijem len na posúdenie prihlášky a komunikáciu s vami.";
+      document.getElementById("form-mode-text").textContent = "Prihlášku mi doručí e-mailom služba Formspree. Potvrdenie sa zobrazí až po jej prijatí.";
     }
 
     function fieldValue(name) {
@@ -272,21 +278,24 @@
       submitLabel.textContent = on ? (mode.live ? "Odosielam…" : "Kontrolujem…") : idleLabel;
     }
 
+    var MATERIALS_LABEL = { "ano": "Áno", "ciastocne": "Čiastočne", "zatial-nie": "Zatiaľ nie" };
+
+    // Kľúče sú čitateľné, lebo sa priamo zobrazia v e-maile s prihláškou.
     function collect() {
       return {
-        company: fieldValue("company"),
-        contactName: fieldValue("contactName"),
-        email: fieldValue("email"),
-        phone: fieldValue("phone"),
-        town: fieldValue("town"),
-        business: fieldValue("business"),
-        existingWeb: fieldValue("existingWeb"),
-        benefit: fieldValue("benefit"),
-        materials: fieldValue("materials"),
-        // ochrana proti spamu — server musí obe hodnoty overiť
-        companyWebsite: (form.elements.companyWebsite.value || ""),
-        elapsedMs: Date.now() - startedAt,
-        source: "mikiforge-web-v0.1"
+        "Firma / živnosť": fieldValue("company"),
+        "Kontaktná osoba": fieldValue("contactName"),
+        "email": fieldValue("email"),
+        "Telefón": fieldValue("phone") || "—",
+        "Obec / mesto": fieldValue("town"),
+        "Čomu sa venuje": fieldValue("business"),
+        "Web / Facebook": fieldValue("existingWeb") || "—",
+        "Ako by web pomohol": fieldValue("benefit"),
+        "Fotografie a podklady": MATERIALS_LABEL[fieldValue("materials")] || fieldValue("materials"),
+        // špeciálne polia služby Formspree:
+        _gotcha: (form.elements.companyWebsite.value || ""),   // pasca na roboty (ľudia nevidia)
+        _subject: "Prihláška: " + fieldValue("company"),          // predmet e-mailu
+        _replyto: fieldValue("email")                            // „Odpovedať“ pôjde priamo firme
       };
     }
 
@@ -374,7 +383,9 @@
       })
         .then(function (res) {
           return res.json().catch(function () { return null; }).then(function (data) {
-            if (res.ok && data && data.ok === true) return data;
+            // úspech iba ak server potvrdí prijatie: {"ok": true} (Formspree aj vlastný server)
+            // alebo {"success": true} (niektoré iné služby)
+            if (res.ok && data && (data.ok === true || data.success === true)) return data;
             var e = new Error("rejected");
             if (data && typeof data.message === "string" && data.message.length < 300) {
               e.userMessage = data.message + " Vaše údaje zostali vo formulári.";

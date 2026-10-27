@@ -1,5 +1,9 @@
 # Server pre prihlasovací formulár — špecifikácia
 
+> **Aktuálne (v0.2):** formulár posiela prihlášky službe **Formspree** (`https://formspree.io/f/mqppqwvo`), ktorá ich doručí e-mailom.
+> Kľúče v JSON sú čitateľné slovenské názvy („Firma / živnosť“, „Kontaktná osoba“, `email`…) plus špeciálne polia Formspree `_gotcha`, `_subject`, `_replyto`.
+> Úspech = HTTP 2xx a `{"ok": true}`. Nižšie je pôvodná špecifikácia pre prípadný vlastný server.
+
 Frontend (`js/main.js`) posiela prihlášku iba v produkčnom režime (`config.js`):
 `form.mode = "production"`, `form.endpoint` začína `https://` a `form.privacyInfoReady = true`.
 

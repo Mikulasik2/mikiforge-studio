@@ -1,5 +1,12 @@
 # Zmeny
 
+## v0.2 — 27. 10. 2026
+- Ostrá prihláška: formulár odosiela cez Formspree (https://formspree.io/f/mqppqwvo) na e-mail.
+  - E-mail s prihláškou má predmet „Prihláška: názov firmy“, čitateľné slovenské názvy polí a „Odpovedať“ ide priamo firme.
+  - Ochrana proti robotom (`_gotcha`), potvrdenie sa zobrazí iba po prijatí službou, pri chybe ostanú údaje vo formulári.
+- Hotová stránka ochrany osobných údajov (prevádzkovateľ Martin Mikulášik, Formspree, Zoho Mail EU, GitHub Pages, lehoty, práva).
+- Štítok projektu „Prihlasovanie otvorené“, upravené texty o termínoch a v kontakte, pätička „v0.2“.
+
 ## v0.1.2 — 27. 10. 2026
 - E-mail kontakt@mikiforge.sk (Zoho Mail, EU) v sekcii Kontakt a pri prihláške; `config.js` → `contact.email`.
 - Kontakt je priamo v HTML, takže sa zobrazí aj bez JavaScriptu.

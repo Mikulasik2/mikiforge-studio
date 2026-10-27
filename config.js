@@ -20,9 +20,9 @@ window.MIKIFORGE_CONFIG = {
    * Inak formulár zostane v bezpečnom demo režime.
    */
   form: {
-    mode: "demo",
-    endpoint: "",            // napr. "https://prihlasky.vasadomena.sk/api/prihlaska"
-    privacyInfoReady: false, // true až po doplnení údajov v ochrana-osobnych-udajov.html
+    mode: "production",
+    endpoint: "https://formspree.io/f/mqppqwvo", // Formspree → e-mail
+    privacyInfoReady: true,  // ochrana-osobnych-udajov.html je doplnená
     timeoutMs: 15000
   },
 
@@ -44,7 +44,7 @@ window.MIKIFORGE_CONFIG = {
   campaign: {
     region: "miestne firmy a živnostníci zo Spiša a okolia",
     municipalities: [],
-    statusLabel: "Pripravovaný projekt",
+    statusLabel: "Prihlasovanie otvorené",
     timingNote: ""
   }
 };
