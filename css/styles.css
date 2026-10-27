@@ -326,6 +326,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
   margin-bottom: 1.4rem;
 }
 .local__lead { font-family: var(--serif); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); line-height: 1.5; color: var(--ink); max-width: 46ch; }
+.local__why { margin: 1.4rem 0 0; color: #3b342e; max-width: 62ch; }
 .local__cost {
   margin: 1.6rem 0 1rem; padding: 14px 18px;
   border-left: 3px solid var(--copper);

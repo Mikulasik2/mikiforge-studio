@@ -1,5 +1,9 @@
 # Zmeny
 
+## v0.2.2 — 27. 10. 2026
+- Prepísané texty pre úspešných podnikateľov: bez tónu „pomoci“, dôraz na férovú výmenu (web ↔ referencia) a na minimum času od firmy.
+- Nadpis „3 firmy. 3 weby na mieru.“, nový odsek „Prečo bez odmeny?“, upravené kroky spolupráce, otázky a formulár („Čo by mal web ukázať alebo priniesť“).
+
 ## v0.2.1 — 27. 10. 2026
 - Úvod na počítači vyplní celú prvú obrazovku, takže spod okraja už nevykukuje pásik krémovej sekcie.
 

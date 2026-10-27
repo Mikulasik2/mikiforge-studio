@@ -123,7 +123,7 @@
     town: { required: "Doplňte obec alebo mesto." },
     business: { required: "Napíšte stručne, čomu sa venujete." },
     existingWeb: { format: "Zadajte adresu webu alebo Facebooku, napr. facebook.com/vasafirma." },
-    benefit: { required: "Napíšte aspoň krátko, ako by vám nový web pomohol.", short: "Napíšte prosím aspoň jednu celú vetu (min. 15 znakov)." },
+    benefit: { required: "Napíšte aspoň krátko, čo by mal web ukázať alebo priniesť.", short: "Napíšte prosím aspoň jednu celú vetu (min. 15 znakov)." },
     materials: { required: "Vyberte jednu z možností." }
   };
 
@@ -135,7 +135,7 @@
     town: "Obec / mesto",
     business: "Čomu sa venujete",
     existingWeb: "Existujúci web alebo Facebook",
-    benefit: "Ako by vám nový web pomohol",
+    benefit: "Čo by mal web ukázať alebo priniesť",
     materials: "Máte fotografie a podklady?"
   };
 
@@ -290,7 +290,7 @@
         "Obec / mesto": fieldValue("town"),
         "Čomu sa venuje": fieldValue("business"),
         "Web / Facebook": fieldValue("existingWeb") || "—",
-        "Ako by web pomohol": fieldValue("benefit"),
+        "Čo má web ukázať / priniesť": fieldValue("benefit"),
         "Fotografie a podklady": MATERIALS_LABEL[fieldValue("materials")] || fieldValue("materials"),
         // špeciálne polia služby Formspree:
         _gotcha: (form.elements.companyWebsite.value || ""),   // pasca na roboty (ľudia nevidia)
@@ -358,7 +358,7 @@
           startedAt = Date.now();
           showStatus("ok", [
             "Ďakujem, prihlášku som prijal.",
-            "Ozvem sa vám e-mailom. Prihlásenie nie je objednávka ani záruka výberu."
+            "Ozvem sa vám e-mailom. Prihlásenie vás k ničomu nezaväzuje."
           ]);
         })
         .catch(function (err) {
