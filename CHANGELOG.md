@@ -1,5 +1,9 @@
 # Zmeny
 
+## v0.1.2 — 27. 10. 2026
+- E-mail kontakt@mikiforge.sk (Zoho Mail, EU) v sekcii Kontakt a pri prihláške; `config.js` → `contact.email`.
+- Kontakt je priamo v HTML, takže sa zobrazí aj bez JavaScriptu.
+
 ## v0.1.1 — 27. 10. 2026
 - Pripojená doména mikiforge.sk (GitHub Pages, DNS u WebSupportu).
 - Súbor `CNAME`, `robots.txt`, `sitemap.xml`.

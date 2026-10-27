@@ -31,7 +31,7 @@ window.MIKIFORGE_CONFIG = {
    * Telefón je nepovinný; prázdny sa nezobrazí.
    */
   contact: {
-    email: "",
+    email: "kontakt@mikiforge.sk",
     phone: ""
   },
 

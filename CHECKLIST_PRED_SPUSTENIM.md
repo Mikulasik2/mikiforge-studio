@@ -4,9 +4,9 @@ Odškrtávajte postupne. Kým nie sú hotové body 1–6, web môže byť verejn
 
 ## 1. Doména a kontakt
 - [x] Vybraná a zaregistrovaná finálna doména. (mikiforge.sk)
-- [ ] Funkčná e-mailová schránka; doplnená do `config.js` → `contact.email`.
+- [x] Funkčná e-mailová schránka; doplnená do `config.js` → `contact.email`. (kontakt@mikiforge.sk, Zoho Mail)
 - [ ] (Voliteľne) telefón do `contact.phone`.
-- [ ] Rozhodnutý statický hosting; web nahraný a otestovaný na doméne cez HTTPS.
+- [x] Rozhodnutý statický hosting; web nahraný a otestovaný na doméne cez HTTPS. (GitHub Pages)
 
 ## 2. Územie a termíny kampane
 - [ ] Potvrdené územie (`campaign.region`) a prípadný zoznam obcí (`campaign.municipalities`).

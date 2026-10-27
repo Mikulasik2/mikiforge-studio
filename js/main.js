@@ -93,7 +93,8 @@
     var phone = (get("contact.phone") || "").trim();
     var listEl = document.getElementById("contact-list");
     var pending = document.getElementById("contact-pending");
-    if (listEl && (email || phone)) {
+    // ak je kontakt už priamo v HTML, nič nepridávame (žiadne duplicity)
+    if (listEl && !listEl.children.length && (email || phone)) {
       if (email) addContact(listEl, "mailto:" + email, email);
       if (phone) addContact(listEl, "tel:" + phone.replace(/[^\d+]/g, ""), phone);
       listEl.hidden = false;

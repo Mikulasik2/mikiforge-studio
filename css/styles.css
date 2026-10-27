@@ -488,6 +488,10 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
 .apply__intro p:not(.eyebrow) { color: #d9d2c6; margin-top: 1.2rem; }
 .apply__small { font-size: .9rem; color: var(--muted) !important; }
 .apply__small a { color: var(--copper-text); text-underline-offset: 3px; }
+.apply__contact { margin-top: 1.8rem; padding: 16px 0 4px 18px; border-left: 1px solid var(--copper); }
+.apply__contact-label { margin: 0 0 .2rem !important; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted) !important; }
+.apply__contact-link { font-family: var(--serif); font-size: clamp(1.15rem, 1rem + .5vw, 1.35rem); color: var(--text); text-decoration-color: var(--copper); text-underline-offset: 5px; overflow-wrap: anywhere; }
+.apply__contact-link:hover { color: var(--copper-text); }
 .req { color: var(--copper-text); font-weight: 700; }
 .opt { color: var(--muted); font-weight: 400; font-size: .88em; }
 
