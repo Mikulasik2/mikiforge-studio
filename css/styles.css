@@ -205,6 +205,15 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
 
 /* ---------- 6. Úvod ---------- */
 .hero { position: relative; overflow: hidden; padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 7vw, 100px); }
+/* Na počítači úvod vyplní celú prvú obrazovku — krémová sekcia nevykukne spod okraja */
+@media (min-width: 961px) {
+  .hero {
+    min-height: calc(100vh - var(--header-h));
+    min-height: calc(100svh - var(--header-h));
+    display: flex; align-items: center;
+  }
+  .hero > .container { width: 100%; }
+}
 .hero__bg {
   position: absolute; inset: 0; pointer-events: none;
   background:

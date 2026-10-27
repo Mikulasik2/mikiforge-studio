@@ -1,5 +1,8 @@
 # Zmeny
 
+## v0.2.1 — 27. 10. 2026
+- Úvod na počítači vyplní celú prvú obrazovku, takže spod okraja už nevykukuje pásik krémovej sekcie.
+
 ## v0.2 — 27. 10. 2026
 - Ostrá prihláška: formulár odosiela cez Formspree (https://formspree.io/f/mqppqwvo) na e-mail.
   - E-mail s prihláškou má predmet „Prihláška: názov firmy“, čitateľné slovenské názvy polí a „Odpovedať“ ide priamo firme.
