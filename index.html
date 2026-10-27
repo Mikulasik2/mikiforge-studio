@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="sk" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MikiForge Studio — weby, aplikácie a hry | Martin Mikulášik</title>
+  <meta name="description" content="Osobné štúdio Martina Mikulášika. Tvorím webové stránky, aplikácie a vlastné hry. Pripravujem projekt: prezentačné weby bez odmeny za tvorbu pre tri miestne firmy zo Spiša a okolia.">
+
+  <!-- PRACOVNÁ VERZIA: pred zverejnením zmeňte na "index, follow" (pozri CHECKLIST_PRED_SPUSTENIM.md) -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta name="theme-color" content="#171918">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph — og:url a canonical sa doplnia až po výbere domény -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="MikiForge Studio">
+  <meta property="og:title" content="MikiForge Studio — Poctivá tvorba. Digitálny výsledok.">
+  <meta property="og:description" content="Weby, aplikácie a vlastné hry od Martina Mikulášika. Pripravujem projekt prezentačných webov pre tri miestne firmy zo Spiša a okolia.">
+  <meta property="og:image" content="assets/img/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MikiForge Studio — značka M a nadpis Poctivá tvorba. Digitálny výsledok.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- ===================== HLAVIČKA ===================== -->
+  <header class="site-header" id="hore">
+    <div class="container site-header__inner">
+      <a class="brand" href="#hore" aria-label="MikiForge Studio — na začiatok stránky">
+        <img class="brand__mark" src="assets/img/brand/mikiforge-mark.svg" width="34" height="34" alt="">
+        <span class="brand__name">MikiForge <span>Studio</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hlavna-navigacia">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="hlavna-navigacia" aria-label="Hlavná navigácia">
+        <ul class="site-nav__list">
+          <li><a href="#projekty">Projekty</a></li>
+          <li><a href="#projekt-pre-firmy">Projekt pre firmy</a></li>
+          <li><a href="#o-studiu">O štúdiu</a></li>
+          <li><a href="#otazky">Otázky</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <a class="btn btn--outline site-nav__cta" href="#prihlaska">Prihlásiť firmu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <!-- ===================== ÚVOD ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Weby · Aplikácie · Hry</p>
+          <h1 class="hero__title" id="hero-title">Poctivá tvorba.<br><span>Digitálny výsledok.</span></h1>
+          <p class="hero__lead">Pomáham malým firmám ukázať svetu, čo robia dobre.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projekt-pre-firmy">Projekt pre miestne firmy <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="link-underline" href="#projekty">Pozrieť moju prácu</a>
+          </div>
+
+          <ol class="hero__process" aria-label="Ako pracujem">
+            <li>Nápad</li>
+            <li>Dizajn</li>
+            <li>Vývoj</li>
+            <li>Spustenie</li>
+          </ol>
+        </div>
+
+        <figure class="hero__visual">
+          <div class="devices">
+            <div class="laptop">
+              <div class="laptop__lid">
+                <div class="laptop__screen">
+                  <picture>
+                    <source type="image/webp" srcset="assets/img/hero/dk-desktop-720.webp 720w, assets/img/hero/dk-desktop-1280.webp 1280w" sizes="(min-width: 1100px) 640px, 90vw">
+                    <img src="assets/img/hero/dk-desktop-1280.jpg" srcset="assets/img/hero/dk-desktop-720.jpg 720w, assets/img/hero/dk-desktop-1280.jpg 1280w" sizes="(min-width: 1100px) 640px, 90vw" width="1280" height="800" alt="Úvodná obrazovka webu D&amp;K AutoCARE na počítači" fetchpriority="high" decoding="async">
+                  </picture>
+                </div>
+              </div>
+              <div class="laptop__base" aria-hidden="true"></div>
+            </div>
+            <div class="phone">
+              <div class="phone__screen">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/hero/dk-mobile-390.webp">
+                  <img src="assets/img/hero/dk-mobile-390.jpg" width="390" height="844" alt="Ten istý web D&amp;K AutoCARE na mobile" decoding="async">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <figcaption class="hero__caption">Na obrazovkách: skutočný web <a href="#projekt-dk">D&amp;K AutoCARE</a>, ktorý som vytvoril.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== PROJEKT PRE MIESTNE FIRMY ===================== -->
+    <section class="local" id="projekt-pre-firmy" aria-labelledby="local-title">
+      <svg class="local__sketch" viewBox="0 0 320 320" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+          <path d="M80 110 L190 70 L290 110 L180 152 Z"/>
+          <path d="M80 110 L80 230 L180 275 L180 152"/>
+          <path d="M180 275 L290 230 L290 110"/>
+          <path d="M80 140 L180 183 L290 140" opacity=".45"/>
+          <path d="M80 170 L180 214 L290 170" opacity=".45"/>
+          <path d="M80 200 L180 245 L290 200" opacity=".45"/>
+          <path d="M120 95 L230 136" opacity=".35"/>
+          <path d="M150 84 L260 124" opacity=".35"/>
+          <path d="M40 60 L300 60" opacity=".2" stroke-dasharray="3 6"/>
+          <path d="M60 30 L60 300" opacity=".2" stroke-dasharray="3 6"/>
+          <circle cx="180" cy="152" r="3"/>
+          <circle cx="80" cy="110" r="2.5"/>
+          <circle cx="290" cy="110" r="2.5"/>
+        </g>
+      </svg>
+
+      <div class="container">
+        <header class="local__head">
+          <p class="eyebrow eyebrow--dark">Projekt pre miestne firmy <span class="status-pill" data-config-text="campaign.statusLabel">Pripravovaný projekt</span></p>
+          <h2 class="local__title" id="local-title">3&nbsp;firmy. Nový web. Nový začiatok.</h2>
+          <p class="local__lead">Rozbieham MikiForge Studio a hľadám tri miestne firmy, ktorým vytvorím prezentačný web bez odmeny za tvorbu. Vy získate priestor pre svoje podnikanie, ja nové realizácie do portfólia.</p>
+          <p class="local__cost"><strong>Doménu a prípadné prevádzkové služby hradí firma.</strong> Konkrétne náklady si dohodneme pred začiatkom spolupráce.</p>
+          <p class="local__region">Pre koho: <span data-config-text="campaign.region">miestne firmy a živnostníci zo Spiša a okolia</span>.<span class="local__municipalities" data-config-list="campaign.municipalities" hidden></span></p>
+        </header>
+
+        <div class="scope">
+          <div class="scope__col">
+            <h3 class="scope__title">Čo je v rozsahu</h3>
+            <ul class="scope__list scope__list--in">
+              <li>jednoduchý prezentačný web</li>
+              <li>predstavenie firmy a služieb</li>
+              <li>galéria dodaných fotografií</li>
+              <li>kontakty a odkaz na navigáciu</li>
+              <li>responzívne zobrazenie na mobile, tablete aj počítači</li>
+              <li>základné technické SEO</li>
+              <li>dve kolá pripomienok v dohodnutom rozsahu</li>
+            </ul>
+          </div>
+          <div class="scope__col">
+            <h3 class="scope__title">Čo nie je súčasťou</h3>
+            <ul class="scope__list scope__list--out">
+              <li>e-shop</li>
+              <li>vlastný rezervačný systém</li>
+              <li>platené externé služby</li>
+              <li>profesionálne fotenie</li>
+              <li>neobmedzené následné úpravy</li>
+            </ul>
+          </div>
+          <div class="scope__col scope__col--note">
+            <h3 class="scope__title">Ako vyberám</h3>
+            <p>Firmy vyberám podľa prínosu webu, primeranosti zadania a pripravenosti spolupracovať. Nejde o náhodné žrebovanie.</p>
+            <p>Od firmy potrebujem podklady (texty, fotografie, kontakty) a dohodu, že dokončený web môžem ukázať vo svojom portfóliu. Recenziu nevyžadujem.</p>
+            <p class="scope__small">Prihlásenie nie je objednávka plateného webu ani záruka výberu.</p>
+          </div>
+        </div>
+
+        <div class="process" id="priebeh">
+          <h3 class="process__title">Priebeh spolupráce</h3>
+          <ol class="process__steps">
+            <li class="process__step">
+              <span class="process__num">01</span>
+              <h4>Prihlásenie firmy</h4>
+              <p>Vyplníte krátku prihlášku o firme a o tom, čo by vám web mal priniesť.</p>
+            </li>
+            <li class="process__step">
+              <span class="process__num">02</span>
+              <h4>Výber a dohoda o rozsahu</h4>
+              <p>S vybranými firmami si prejdem obsah webu, rozsah a prípadné náklady na doménu.</p>
+            </li>
+            <li class="process__step">
+              <span class="process__num">03</span>
+              <h4>Podklady a tvorba</h4>
+              <p>Dodáte texty a fotografie, ja navrhnem a postavím web. Pripomienky riešime v dvoch kolách.</p>
+            </li>
+            <li class="process__step">
+              <span class="process__num">04</span>
+              <h4>Spustenie a odovzdanie</h4>
+              <p>Web zverejníme na vašej doméne a odovzdám vám prístupy a stručný návod.</p>
+            </li>
+          </ol>
+          <p class="process__note" data-config-text="campaign.timingNote">Weby vznikajú postupne, nie naraz. Termín dokončenia si dohodneme s každou firmou zvlášť. Termíny prijímania prihlášok zatiaľ nie sú stanovené.</p>
+          <div class="process__actions">
+            <a class="btn btn--primary" href="#prihlaska">Prihlásiť firmu <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="link-underline link-underline--dark" href="#otazky">Časté otázky</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJEKTY ===================== -->
+    <section class="projects" id="projekty" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Portfólio</p>
+            <h2 class="section-title" id="projects-title">Čo vzniká v MikiForge</h2>
+          </div>
+          <p class="section-head__aside">Webové stránky, aplikácie a hry. Na každom projekte pracujem osobne — od návrhu po spustenie.</p>
+        </header>
+
+        <!-- Projekt 1 -->
+        <article class="project" id="projekt-mw" aria-labelledby="mw-title">
+          <div class="project__media">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span><em>mikulasik2.github.io/mechanical-workshop</em></div>
+              <picture>
+                <source type="image/webp" srcset="assets/img/projects/mw-web-desktop-720.webp 720w, assets/img/projects/mw-web-desktop-1280.webp 1280w" sizes="(min-width: 1000px) 680px, 92vw">
+                <img src="assets/img/projects/mw-web-desktop-1280.jpg" srcset="assets/img/projects/mw-web-desktop-720.jpg 720w, assets/img/projects/mw-web-desktop-1280.jpg 1280w" sizes="(min-width: 1000px) 680px, 92vw" width="1280" height="800" loading="lazy" decoding="async" alt="Prezentačný web hry Mechanical Workshop: úvod s nadpisom a ukážkou bežiaceho stroja v hre">
+              </picture>
+            </div>
+            <figure class="project__detail">
+              <picture>
+                <source type="image/webp" srcset="assets/img/projects/mw-gameplay-640.webp">
+                <img src="assets/img/projects/mw-gameplay-640.jpg" width="640" height="360" loading="lazy" decoding="async" alt="Záber z hry: zložitý mechanizmus s ozubenými kolesami, kladkami a lampami">
+              </picture>
+              <figcaption>Záber z hry</figcaption>
+            </figure>
+          </div>
+          <div class="project__body">
+            <p class="project__kicker"><span>01</span> Vlastný herný projekt</p>
+            <h3 class="project__title" id="mw-title">Mechanical Workshop</h3>
+            <p>Mechanická logická hra, v ktorej hráč skladá funkčné stroje z ozubených kolies, motorov, kladiek, lán a pružín — a potom stlačí PLAY a sleduje, či mechanizmus naozaj funguje.</p>
+            <p>Navrhol a vyvíjam celú hru aj jej prezentačný web s ukážkami z hry a hrateľným webovým demom. Verzia pre Android je zatiaľ v uzavretom testovaní.</p>
+            <ul class="tags" aria-label="Charakteristika projektu">
+              <li>Hra</li><li>Prezentačný web</li><li>Webové demo</li>
+            </ul>
+            <a class="btn btn--outline" href="https://mikulasik2.github.io/mechanical-workshop/" target="_blank" rel="noopener">Pozrieť projekt <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+          </div>
+        </article>
+
+        <!-- Projekt 2 -->
+        <article class="project project--alt" id="projekt-dk" aria-labelledby="dk-title">
+          <div class="project__media">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span><em>dkautocare.sk</em></div>
+              <picture>
+                <source type="image/webp" srcset="assets/img/projects/dk-galeria-720.webp 720w, assets/img/projects/dk-galeria-1280.webp 1280w" sizes="(min-width: 1000px) 680px, 92vw">
+                <img src="assets/img/projects/dk-galeria-1280.jpg" srcset="assets/img/projects/dk-galeria-720.jpg 720w, assets/img/projects/dk-galeria-1280.jpg 1280w" sizes="(min-width: 1000px) 680px, 92vw" width="1280" height="800" loading="lazy" decoding="async" alt="Web D&amp;K AutoCARE: sekcia Naše realizácie s porovnaním fotografií pred a po">
+              </picture>
+            </div>
+            <figure class="project__detail">
+              <picture>
+                <source type="image/webp" srcset="assets/img/projects/dk-sluzby-640.webp">
+                <img src="assets/img/projects/dk-sluzby-640.jpg" width="640" height="400" loading="lazy" decoding="async" alt="Web D&amp;K AutoCARE: prehľad služieb v kartách">
+              </picture>
+              <figcaption>Prehľad služieb</figcaption>
+            </figure>
+          </div>
+          <div class="project__body">
+            <p class="project__kicker"><span>02</span> Realizovaný web</p>
+            <h3 class="project__title" id="dk-title">D&amp;K AutoCARE</h3>
+            <p>Prezentačný web pre starostlivosť o vozidlá v Spišskej Novej Vsi. Návštevník na ňom rýchlo nájde, čo firma robí a ako ju kontaktovať.</p>
+            <ul class="checks">
+              <li>prehľad služieb</li>
+              <li>cenník</li>
+              <li>galéria s porovnaním fotografií pred a po</li>
+              <li>kontakty a rýchle volanie na mobile</li>
+            </ul>
+            <a class="btn btn--outline" href="https://dkautocare.sk/" target="_blank" rel="noopener">Navštíviť web <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== O ŠTÚDIU ===================== -->
+    <section class="about" id="o-studiu" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__mark" aria-hidden="true">
+          <div class="monogram">
+            <span class="monogram__letters">MM</span>
+            <span class="monogram__rule"></span>
+            <span class="monogram__caption">MikiForge Studio</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">O štúdiu</p>
+          <h2 class="section-title" id="about-title">Za štúdiom stojím ja.</h2>
+          <p class="about__lead">Volám sa Martin Mikulášik a MikiForge Studio je moje osobné štúdio. Tvorím webové stránky, aplikácie a vlastné hry.</p>
+          <p>Baví ma, keď technika slúži ľuďom: web sa rýchlo načíta, dá sa pohodlne používať na mobile a návštevník v ňom bez hľadania nájde to, kvôli čomu prišiel. Popri webových zákazkách vyvíjam vlastné projekty, napríklad hru Mechanical Workshop — práve tam si skúšam nové postupy, ktoré potom využívam aj pri weboch.</p>
+          <p>Nie som veľká agentúra a netvárim sa tak. Na každom projekte pracujem osobne, takže viete, s kým komunikujete a kto za výsledkom stojí.</p>
+          <ul class="principles">
+            <li><strong>Osobná komunikácia</strong><span>Jeden človek od prvého stretnutia po spustenie.</span></li>
+            <li><strong>Jasný rozsah vopred</strong><span>Čo je v cene a čo nie, dohodneme ešte pred začiatkom.</span></li>
+            <li><strong>Funkčnosť na prvom mieste</strong><span>Rýchly, prehľadný web, ktorý funguje aj na mobile.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OTÁZKY ===================== -->
+    <section class="faq" id="otazky" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header>
+          <p class="eyebrow">Časté otázky</p>
+          <h2 class="section-title" id="faq-title">Čo je dobré vedieť</h2>
+          <p class="faq__intro">Odpovede sa týkajú pripravovaného projektu pre tri miestne firmy.</p>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Čo je pri tvorbe webu zdarma?</summary>
+            <div class="faq__answer">
+              <p>Bez odmeny je moja práca na tvorbe webu v dohodnutom rozsahu: jednoduchý prezentačný web s predstavením firmy a služieb, galériou dodaných fotografií, kontaktmi a odkazom na navigáciu, responzívnym zobrazením, základným technickým SEO a dvomi kolami pripomienok.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Aké náklady hradí firma?</summary>
+            <div class="faq__answer">
+              <p>Firma hradí doménu a prípadné prevádzkové služby, napríklad hosting alebo e-mailovú schránku, ak ich bude potrebovať. Konkrétne náklady si dohodneme ešte pred začiatkom spolupráce, aby vás nič neprekvapilo.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Ako sa vyberajú tri firmy?</summary>
+            <div class="faq__answer">
+              <p>Vyberám podľa toho, ako veľmi firme web pomôže, či je zadanie primerané rozsahu projektu a či je firma pripravená spolupracovať a dodať podklady. Nejde o žrebovanie a neplatí „kto prv príde“.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Čo musím dodať?</summary>
+            <div class="faq__answer">
+              <p>Základné texty o firme a službách (stačí aj v jednoduchej podobe, pomôžem ich upraviť), fotografie, logo ak ho máte, kontaktné údaje a adresu prevádzky. Potrebujem aj vašu súhlasnú dohodu, že dokončený web môžem ukázať vo svojom portfóliu.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Budem vlastniť svoju doménu?</summary>
+            <div class="faq__answer">
+              <p>Áno. Doména sa registruje na vašu firmu a patrí vám. Pomôžem vám s jej výberom a nastavením.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Čo ak moja firma nebude vybraná?</summary>
+            <div class="faq__answer">
+              <p>Dám vám vedieť. Prihlásenie vás k ničomu nezaväzuje — nie je to objednávka plateného webu. Ak budete mať záujem, môžeme sa neskôr dohodnúť na samostatnej spolupráci za bežných podmienok.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Ako budú fungovať neskoršie úpravy?</summary>
+            <div class="faq__answer">
+              <p>Súčasťou projektu sú dve kolá pripomienok počas tvorby. Neskoršie úpravy a starostlivosť o web po spustení si dohodneme osobitne podľa toho, čo budete potrebovať.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRIHLÁŠKA ===================== -->
+    <section class="apply" id="prihlaska" aria-labelledby="apply-title">
+      <div class="container apply__grid">
+        <div class="apply__intro">
+          <p class="eyebrow">Prihláška</p>
+          <h2 class="section-title" id="apply-title">Prihláste svoju firmu</h2>
+          <p>Vyplnenie zaberie pár minút. Stačia stručné odpovede — podrobnosti doladíme osobne.</p>
+          <p class="apply__small">Polia označené <span class="req" aria-hidden="true">*</span><span class="visually-hidden">hviezdičkou</span> sú povinné. Informácie o spracúvaní údajov nájdete na stránke <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>.</p>
+        </div>
+
+        <div class="apply__panel">
+          <div class="form-mode" id="form-mode" role="note">
+            <span class="form-mode__dot" aria-hidden="true"></span>
+            <p><strong id="form-mode-title">Ukážka prihlášky — prihlasovanie zatiaľ nie je otvorené</strong>
+            <span id="form-mode-text">Formulár si môžete vyskúšať. Údaje sa iba skontrolujú priamo vo vašom prehliadači a nikam sa neodošlú ani neuložia.</span></p>
+          </div>
+
+          <noscript>
+            <p class="form-noscript">Kontrola prihlášky potrebuje zapnutý JavaScript. Zvyšok stránky funguje aj bez neho.</p>
+          </noscript>
+
+          <form class="form" id="application-form" novalidate aria-describedby="form-mode-title">
+            <div class="form__summary" id="form-summary" tabindex="-1" hidden>
+              <p class="form__summary-title" id="form-summary-title"></p>
+              <ul id="form-summary-list"></ul>
+            </div>
+
+            <div class="form__grid">
+              <div class="field field--full">
+                <label for="f-company">Názov firmy alebo živnosti <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-company" name="company" type="text" autocomplete="organization" required maxlength="120" aria-describedby="f-company-err">
+                <p class="field__error" id="f-company-err"></p>
+              </div>
+
+              <div class="field">
+                <label for="f-name">Kontaktná osoba <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="contactName" type="text" autocomplete="name" required maxlength="100" aria-describedby="f-name-err">
+                <p class="field__error" id="f-name-err"></p>
+              </div>
+
+              <div class="field">
+                <label for="f-email">E-mail <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="160" spellcheck="false" aria-describedby="f-email-err">
+                <p class="field__error" id="f-email-err"></p>
+              </div>
+
+              <div class="field">
+                <label for="f-phone">Telefón <span class="opt">(nepovinné)</span></label>
+                <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" aria-describedby="f-phone-hint f-phone-err">
+                <p class="field__hint" id="f-phone-hint">Napríklad +421 900 000 000</p>
+                <p class="field__error" id="f-phone-err"></p>
+              </div>
+
+              <div class="field">
+                <label for="f-town">Obec / mesto <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-town" name="town" type="text" autocomplete="address-level2" required maxlength="80" aria-describedby="f-town-err">
+                <p class="field__error" id="f-town-err"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-business">Čomu sa venujete <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-business" name="business" type="text" required maxlength="200" aria-describedby="f-business-hint f-business-err">
+                <p class="field__hint" id="f-business-hint">Jednou vetou, napríklad „kaderníctvo“ alebo „stolárska výroba na mieru“.</p>
+                <p class="field__error" id="f-business-err"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-web">Existujúci web alebo Facebook <span class="opt">(nepovinné)</span></label>
+                <input id="f-web" name="existingWeb" type="text" inputmode="url" autocomplete="url" maxlength="200" spellcheck="false" aria-describedby="f-web-err">
+                <p class="field__error" id="f-web-err"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-benefit">Ako by vám nový web pomohol <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="f-benefit" name="benefit" rows="5" required maxlength="1500" aria-describedby="f-benefit-hint f-benefit-err"></textarea>
+                <p class="field__hint" id="f-benefit-hint">Napríklad: viac nových zákazníkov, menej telefonátov s rovnakými otázkami, ukážka vašej práce.</p>
+                <p class="field__error" id="f-benefit-err"></p>
+              </div>
+
+              <fieldset class="field field--full choice" aria-describedby="f-materials-err">
+                <legend>Máte fotografie a podklady? <span class="req" aria-hidden="true">*</span></legend>
+                <div class="choice__row">
+                  <label class="choice__opt"><input type="radio" name="materials" value="ano" required><span>Áno</span></label>
+                  <label class="choice__opt"><input type="radio" name="materials" value="ciastocne"><span>Čiastočne</span></label>
+                  <label class="choice__opt"><input type="radio" name="materials" value="zatial-nie"><span>Zatiaľ nie</span></label>
+                </div>
+                <p class="field__error" id="f-materials-err"></p>
+              </fieldset>
+
+              <!-- Pasca na roboty: ľudia toto pole nevidia ani nevyplnia -->
+              <div class="hp" aria-hidden="true">
+                <label for="f-hp">Toto pole nechajte prázdne</label>
+                <input id="f-hp" name="companyWebsite" type="text" tabindex="-1" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="form__footer">
+              <button class="btn btn--primary form__submit" type="submit" id="form-submit" disabled>
+                <span class="form__submit-label">Skontrolovať prihlášku</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form__legal" id="form-legal">V ukážke sa nič neodosiela. V ostrej verzii budú údaje použité len na posúdenie prihlášky a komunikáciu s vami.</p>
+            </div>
+
+            <div class="form__status" id="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAKT ===================== -->
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="section-title" id="contact-title">Martin Mikulášik</h2>
+          <p class="contact__sub">MikiForge Studio · weby, aplikácie a hry</p>
+        </div>
+        <div class="contact__box" id="contact-box">
+          <p class="contact__pending" id="contact-pending">Priamy kontakt pripravujem.</p>
+          <ul class="contact__list" id="contact-list" hidden></ul>
+          <p class="contact__note">Ak máte záujem o projekt pre miestne firmy, sledujte túto stránku — prihlášky otvorím po potvrdení termínov.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand"><img src="assets/img/brand/mikiforge-mark.svg" width="22" height="22" alt="" loading="lazy">Martin Mikulášik <span aria-hidden="true">·</span> MikiForge Studio</p>
+      <p class="site-footer__tagline">Tvorím digitálne riešenia s reálnym dopadom.</p>
+      <ul class="site-footer__links">
+        <li><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></li>
+        <li><a href="#hore">Na začiatok</a></li>
+      </ul>
+      <p class="site-footer__meta">© <span id="year">2026</span> Martin Mikulášik · pracovná verzia v0.1</p>
+    </div>
+  </footer>
+</body>
+</html>
