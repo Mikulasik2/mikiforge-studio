@@ -1,5 +1,11 @@
 # Zmeny
 
+## v0.2.4 — 28. 10. 2026
+- Krok 02 „Dohoda o rozsahu“: dohoda e-mailom alebo telefonicky, bez povinného stretnutia.
+- Krok 03 a otázka o čase: texty rád pripravím, firma môže dodať aj vlastné.
+- O štúdiu: „Popri webových stránkach vyvíjam…“.
+- Oprava: „Na začiatok“ a logo v hlavičke teraz vyrolujú stránku úplne hore.
+
 ## v0.2.3 — 27. 10. 2026
 - Meno Martin Mikulášik iba tam, kde je nevyhnutné: ochrana osobných údajov a malým písmom v pätičke.
 - Odstránené z titulku stránky, popisov pre vyhľadávače a náhľady odkazov, sekcie O štúdiu, nadpisu kontaktu a obrázka náhľadu (nový súbor og-image-v2.jpg).
