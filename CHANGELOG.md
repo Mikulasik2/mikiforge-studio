@@ -1,5 +1,9 @@
 # Zmeny
 
+## v0.3 — 28. 10. 2026
+- Web je otvorený pre vyhľadávače: `index, follow` (ochrana osobných údajov ostáva `noindex`).
+- Štruktúrované údaje (JSON-LD): MikiForge Studio, zakladateľ Martin Mikulášik, e-mail, web; meta `author` — meno je čitateľné pre Google bez toho, aby bolo viditeľne na stránke.
+
 ## v0.2.4 — 28. 10. 2026
 - Krok 02 „Dohoda o rozsahu“: dohoda e-mailom alebo telefonicky, bez povinného stretnutia.
 - Krok 03 a otázka o čase: texty rád pripravím, firma môže dodať aj vlastné.

@@ -35,7 +35,7 @@ Odškrtávajte postupne. Kým nie sú hotové body 1–6, web môže byť verejn
 - [x] Skontrolovaný text pri tlačidle (`#form-legal` sa v produkcii nastaví automaticky).
 
 ## 7. Metadáta a indexovanie
-- [ ] V `index.html` zmeniť `<meta name="robots" content="noindex, nofollow">` na `index, follow` (stránku ochrany údajov môžete nechať `noindex`).
+- [x] V `index.html` zmeniť `<meta name="robots" content="noindex, nofollow">` na `index, follow` (stránku ochrany údajov môžete nechať `noindex`).
 - [x] Doplniť `<link rel="canonical" href="https://vasadomena.sk/">`.
 - [x] `og:url` a absolútna `og:image` pre mikiforge.sk.
 - [x] Vytvoriť `robots.txt` a `sitemap.xml` so skutočnou doménou.

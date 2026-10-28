@@ -6,8 +6,8 @@
   <title>MikiForge Studio — weby, aplikácie a hry</title>
   <meta name="description" content="MikiForge Studio — webové stránky, aplikácie a vlastné hry. Pre tri miestne firmy zo Spiša a okolia vytvorím prezentačný web bez odmeny za tvorbu.">
 
-  <!-- PRACOVNÁ VERZIA: pred zverejnením zmeňte na "index, follow" (pozri CHECKLIST_PRED_SPUSTENIM.md) -->
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Martin Mikulášik">
 
   <meta name="theme-color" content="#171918">
   <meta name="color-scheme" content="dark light">
@@ -26,6 +26,43 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="MikiForge Studio — značka M a nadpis Poctivá tvorba. Digitálny výsledok.">
   <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Štruktúrované údaje pre vyhľadávače (návštevník ich nevidí) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mikiforge.sk/#studio",
+        "name": "MikiForge Studio",
+        "url": "https://mikiforge.sk/",
+        "logo": "https://mikiforge.sk/assets/img/brand/icon-512.png",
+        "email": "kontakt@mikiforge.sk",
+        "description": "Osobné štúdio — webové stránky, aplikácie a vlastné hry.",
+        "areaServed": "Spiš, Slovensko",
+        "founder": { "@id": "https://mikiforge.sk/#martin" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mikiforge.sk/#martin",
+        "name": "Martin Mikulášik",
+        "jobTitle": "Tvorca webových stránok, aplikácií a hier",
+        "url": "https://mikiforge.sk/",
+        "worksFor": { "@id": "https://mikiforge.sk/#studio" },
+        "sameAs": ["https://mikulasik2.github.io/mechanical-workshop/"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mikiforge.sk/#web",
+        "url": "https://mikiforge.sk/",
+        "name": "MikiForge Studio",
+        "inLanguage": "sk",
+        "publisher": { "@id": "https://mikiforge.sk/#studio" }
+      }
+    ]
+  }
+  </script>
 
   <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/img/brand/favicon-32.png" sizes="32x32" type="image/png">
