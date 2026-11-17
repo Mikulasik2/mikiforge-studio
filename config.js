@@ -35,7 +35,7 @@ window.MIKIFORGE_CONFIG = {
    */
   reviews: {
     mode: "production",
-    endpoint: "",
+    endpoint: "https://formspree.io/f/xwloorqe",
     privacyInfoReady: true,  // sekcia 2a v ochrane osobných údajov je doplnená
     timeoutMs: 15000
   },
