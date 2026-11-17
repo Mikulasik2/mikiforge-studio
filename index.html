@@ -69,10 +69,12 @@
   <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sekcie-v04.css">
 
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
   <script src="config.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/reviews.js" defer></script>
 </head>
 <body id="hore">
   <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
@@ -94,6 +96,7 @@
         <ul class="site-nav__list">
           <li><a href="#projekty">Projekty</a></li>
           <li><a href="#projekt-pre-firmy">Projekt pre firmy</a></li>
+          <li><a href="#hodnotenia">Hodnotenia</a></li>
           <li><a href="#o-studiu">O štúdiu</a></li>
           <li><a href="#otazky">Otázky</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
@@ -200,7 +203,7 @@
             <h3 class="scope__title">Čo nie je súčasťou</h3>
             <ul class="scope__list scope__list--out">
               <li>e-shop</li>
-              <li>vlastný rezervačný systém</li>
+              <li>rezervačný systém <span class="scope__aside">(dá sa doplniť ako samostatná služba, <a href="#projekt-dk">v praxi beží u D&amp;K AutoCARE</a>)</span></li>
               <li>platené externé služby</li>
               <li>profesionálne fotenie</li>
               <li>neobmedzené následné úpravy</li>
@@ -277,14 +280,19 @@
             </figure>
           </div>
           <div class="project__body">
-            <p class="project__kicker"><span>01</span> Vlastný herný projekt</p>
+            <p class="project__kicker"><span>01</span> Vlastná hra</p>
             <h3 class="project__title" id="mw-title">Mechanical Workshop</h3>
+            <p class="project__status"><span class="project__status-dot" aria-hidden="true"></span><span data-config-text="projects.mwStatus">Vonku na Google Play · v0.34</span></p>
             <p>Mechanická logická hra, v ktorej hráč skladá funkčné stroje z ozubených kolies, motorov, kladiek, lán a pružín — a potom stlačí PLAY a sleduje, či mechanizmus naozaj funguje.</p>
-            <p>Navrhol a vyvíjam celú hru aj jej prezentačný web s ukážkami z hry a hrateľným webovým demom. Verzia pre Android je zatiaľ v uzavretom testovaní.</p>
+            <p>Hra má 40 levelov v troch kapitolách, voľný režim Workshop a ukladanie vlastných strojov. Navrhol a vyvíjam celú hru aj jej prezentačný web s trailerom a hrateľným webovým demom.</p>
             <ul class="tags" aria-label="Charakteristika projektu">
-              <li>Hra</li><li>Prezentačný web</li><li>Webové demo</li>
+              <li>Hra pre Android</li><li>Google Play</li><li>Prezentačný web</li><li>Webové demo</li>
             </ul>
-            <a class="btn btn--outline" href="https://mikulasik2.github.io/mechanical-workshop/" target="_blank" rel="noopener">Pozrieť projekt <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+            <div class="project__actions">
+              <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.mikiforgestudio.mechanicalworkshop" target="_blank" rel="noopener">Stiahnuť z Google Play <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+              <a class="btn btn--outline" href="https://mikulasik2.github.io/mechanical-workshop/demo/" target="_blank" rel="noopener">Hrať demo v prehliadači <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+              <a class="link-underline" href="https://mikulasik2.github.io/mechanical-workshop/" target="_blank" rel="noopener">Web hry<span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+            </div>
           </div>
         </article>
 
@@ -307,18 +315,164 @@
             </figure>
           </div>
           <div class="project__body">
-            <p class="project__kicker"><span>02</span> Realizovaný web</p>
+            <p class="project__kicker"><span>02</span> Realizovaný web + rezervácie</p>
             <h3 class="project__title" id="dk-title">D&amp;K AutoCARE</h3>
             <p>Prezentačný web pre starostlivosť o vozidlá v Spišskej Novej Vsi. Návštevník na ňom rýchlo nájde, čo firma robí a ako ju kontaktovať.</p>
+            <p>K webu som doplnil vlastný online rezervačný systém: zákazník si vyberie službu, termín a vyplní údaje, firma žiadosť potvrdí. Nemusí kvôli tomu volať.</p>
             <ul class="checks">
               <li>prehľad služieb</li>
               <li>cenník</li>
               <li>galéria s porovnaním fotografií pred a po</li>
               <li>kontakty a rýchle volanie na mobile</li>
+              <li>online žiadosť o termín v troch krokoch</li>
             </ul>
-            <a class="btn btn--outline" href="https://dkautocare.sk/" target="_blank" rel="noopener">Navštíviť web <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+            <div class="project__actions">
+              <a class="btn btn--outline" href="https://dkautocare.sk/" target="_blank" rel="noopener">Navštíviť web <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+              <a class="link-underline" href="https://rezervacie.dkautocare.sk/#/b/dk-autocare" target="_blank" rel="noopener">Rezervácie D&amp;K<span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+            </div>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- ===================== HODNOTENIA (v0.4) ===================== -->
+    <section class="reviews" id="hodnotenia" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Hodnotenia</p>
+            <h2 class="section-title" id="reviews-title">Čo hovoria klienti</h2>
+          </div>
+          <p class="section-head__aside">Zverejňujem iba hodnotenia od ľudí, s ktorými som naozaj spolupracoval, v znení, ako ich napísali.</p>
+        </header>
+
+        <div class="reviews__grid">
+          <div class="reviews__list" id="reviews-list">
+            <!--
+              NOVÉ HODNOTENIE: skopíruj blok <figure> nižšie, odstráň okolo neho komentár
+              a vlož text presne podľa klienta (opraviť smieš len preklepy).
+              Hviezdičky: počet ★ = hodnotenie; ak klient hodnotenie nezadal, riadok <p class="review__stars"> zmaž.
+              Po pridaní prvého hodnotenia zmaž odstavec .reviews__empty pod týmto komentárom.
+
+            <figure class="review">
+              <p class="review__stars" aria-label="Hodnotenie 5 z 5">★★★★★</p>
+              <blockquote class="review__text">
+                <p>Text hodnotenia presne podľa klienta.</p>
+              </blockquote>
+              <figcaption class="review__author">
+                <strong>Meno Priezvisko</strong>
+                <span>Názov firmy · <a href="https://web-firmy.sk/" target="_blank" rel="noopener">web-firmy.sk</a></span>
+              </figcaption>
+            </figure>
+            -->
+            <p class="reviews__empty">Prvé hodnotenia od klientov tu pribudnú čoskoro.</p>
+          </div>
+
+          <div class="reviews__form-wrap" id="napisat-hodnotenie">
+            <h3 class="reviews__form-title">Spolupracovali sme?</h3>
+            <p class="reviews__form-lead">Budem rád za pár úprimných viet o tom, ako sa vám so mnou pracovalo. Hodnotenie si pred zverejnením prečítam a zverejním ho len s vaším súhlasom.</p>
+
+            <div class="apply__panel">
+              <noscript>
+                <p class="form-noscript">Formulár potrebuje zapnutý JavaScript. Hodnotenie mi môžete poslať aj e-mailom na kontakt@mikiforge.sk.</p>
+              </noscript>
+
+              <form class="form" id="review-form" novalidate>
+                <div class="form__summary" id="review-summary" tabindex="-1" hidden>
+                  <p class="form__summary-title" id="review-summary-title"></p>
+                  <ul id="review-summary-list"></ul>
+                </div>
+
+                <div class="form__grid">
+                  <div class="field">
+                    <label for="r-name">Meno <span class="req" aria-hidden="true">*</span></label>
+                    <input id="r-name" name="reviewName" type="text" autocomplete="name" required maxlength="100" aria-describedby="r-name-hint r-name-err">
+                    <p class="field__hint" id="r-name-hint">Zobrazí sa pri hodnotení.</p>
+                    <p class="field__error" id="r-name-err"></p>
+                  </div>
+                  <div class="field">
+                    <label for="r-company">Firma <span class="opt">(nepovinné)</span></label>
+                    <input id="r-company" name="reviewCompany" type="text" autocomplete="organization" maxlength="120" aria-describedby="r-company-err">
+                    <p class="field__error" id="r-company-err"></p>
+                  </div>
+                  <div class="field field--full">
+                    <label for="r-email">E-mail <span class="req" aria-hidden="true">*</span></label>
+                    <input id="r-email" name="reviewEmail" type="email" inputmode="email" autocomplete="email" required maxlength="160" spellcheck="false" aria-describedby="r-email-hint r-email-err">
+                    <p class="field__hint" id="r-email-hint">Nezverejní sa. Použijem ho len na overenie, že hodnotenie je od vás.</p>
+                    <p class="field__error" id="r-email-err"></p>
+                  </div>
+
+                  <fieldset class="field field--full choice choice--stars">
+                    <legend>Celkové hodnotenie <span class="opt">(nepovinné)</span></legend>
+                    <div class="choice__row">
+                      <label class="choice__opt"><input type="radio" name="reviewRating" value="5"><span aria-label="5 z 5">★★★★★</span></label>
+                      <label class="choice__opt"><input type="radio" name="reviewRating" value="4"><span aria-label="4 z 5">★★★★</span></label>
+                      <label class="choice__opt"><input type="radio" name="reviewRating" value="3"><span aria-label="3 z 5">★★★</span></label>
+                      <label class="choice__opt"><input type="radio" name="reviewRating" value="2"><span aria-label="2 z 5">★★</span></label>
+                      <label class="choice__opt"><input type="radio" name="reviewRating" value="1"><span aria-label="1 z 5">★</span></label>
+                    </div>
+                  </fieldset>
+
+                  <div class="field field--full">
+                    <label for="r-text">Vaše hodnotenie <span class="req" aria-hidden="true">*</span></label>
+                    <textarea id="r-text" name="reviewText" rows="5" required maxlength="1500" aria-describedby="r-text-hint r-text-err"></textarea>
+                    <p class="field__hint" id="r-text-hint">Napríklad: s čím ste prišli, ako prebiehala spolupráca a čo vám web alebo aplikácia priniesli.</p>
+                    <p class="field__error" id="r-text-err"></p>
+                  </div>
+
+                  <div class="field field--full consent">
+                    <label class="consent__opt" for="r-consent">
+                      <input id="r-consent" name="reviewConsent" type="checkbox" required aria-describedby="r-consent-err">
+                      <span>Súhlasím so zverejnením tohto hodnotenia spolu s mojím menom a firmou na mikiforge.sk. Súhlas môžem kedykoľvek odvolať e-mailom. <span class="req" aria-hidden="true">*</span></span>
+                    </label>
+                    <p class="field__error" id="r-consent-err"></p>
+                  </div>
+
+                  <!-- Pasca na roboty: ľudia toto pole nevidia ani nevyplnia -->
+                  <div class="hp" aria-hidden="true">
+                    <label for="r-hp">Toto pole nechajte prázdne</label>
+                    <input id="r-hp" name="reviewWebsite" type="text" tabindex="-1" autocomplete="off">
+                  </div>
+                </div>
+
+                <div class="form__footer">
+                  <button class="btn btn--primary form__submit" type="submit" id="review-submit" disabled>
+                    <span class="form__submit-label">Odoslať hodnotenie</span>
+                    <span class="spinner" aria-hidden="true"></span>
+                  </button>
+                  <p class="form__legal" id="review-legal">Viac v časti <a href="ochrana-osobnych-udajov.html#hodnotenia">Ochrana osobných údajov</a>.</p>
+                </div>
+
+                <div class="form__status" id="review-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MIKIFORGE LABS (v0.4) ===================== -->
+    <section class="labs" id="labs" aria-labelledby="labs-title">
+      <div class="container">
+        <div class="labs__card">
+          <div class="labs__text">
+            <p class="eyebrow">MikiForge Labs</p>
+            <h2 class="labs__title" id="labs-title">Experimenty</h2>
+            <p class="labs__lead">Miesto, kde si overujem nové technológie mimo klientskych projektov. Výsledky zverejňujem otvorene, vrátane tých, ktoré nevyjdú.</p>
+          </div>
+
+          <article class="lab" aria-labelledby="arena-title">
+            <p class="lab__meta"><span>Experiment 001</span><span class="lab__live" data-config-text="projects.arenaStatus">Live · paper trading</span></p>
+            <h3 class="lab__title" id="arena-title">AI Trading Arena</h3>
+            <p>Dva jazykové modely 30 dní súťažia v simulovanom obchodovaní na trhu BTC/USD. Stránka priebežne ukazuje vývoj virtuálneho kapitálu, rozhodnutia modelov aj uzavreté obchody.</p>
+            <p class="lab__note">Bez reálnych peňazí. Ide o výskumný experiment, nie o investičné odporúčanie.</p>
+            <svg class="lab__chart" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <path d="M0 42 L24 38 L48 44 L72 30 L96 34 L120 22 L144 28 L168 18 L192 24 L216 12 L240 16" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+              <path d="M0 46 L24 48 L48 40 L72 44 L96 38 L120 42 L144 36 L168 40 L192 32 L216 36 L240 30" fill="none" stroke="currentColor" stroke-width="1" opacity=".45" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <a class="btn btn--outline" href="https://mikulasik2.github.io/mikiforge-arena-live/" target="_blank" rel="noopener">Sledovať experiment <span class="btn__arrow" aria-hidden="true">↗</span><span class="visually-hidden"> (otvorí sa v novom okne)</span></a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -539,6 +693,8 @@
       <p class="site-footer__brand"><img src="assets/img/brand/mikiforge-mark.svg" width="22" height="22" alt="" loading="lazy">MikiForge Studio</p>
       <p class="site-footer__tagline">Tvorím digitálne riešenia s reálnym dopadom.</p>
       <ul class="site-footer__links">
+        <li><a href="#napisat-hodnotenie">Napísať hodnotenie</a></li>
+        <li><a href="#labs">MikiForge Labs</a></li>
         <li><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></li>
         <li><a href="#hore">Na začiatok</a></li>
       </ul>

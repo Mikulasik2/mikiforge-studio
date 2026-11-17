@@ -1,5 +1,15 @@
 # Zmeny
 
+## v0.4 — 17. 11. 2026
+- Mechanical Workshop: stav „Vonku na Google Play · v0.34“ (`config.js` → `projects.mwStatus`), 40 levelov, Workshop, ukladanie strojov; tlačidlá Google Play, webové demo a web hry.
+- D&K AutoCARE: doplnený online rezervačný systém (popis, bod v zozname, odkaz na rezervacie.dkautocare.sk).
+- Projekt pre firmy: pri „rezervačný systém“ poznámka, že sa dá doplniť ako samostatná služba.
+- Nová sekcia Hodnotenia: zoznam hodnotení (pridávajú sa ručne do HTML po kontrole) a formulár cez Formspree s povinným súhlasom so zverejnením, predmet „Hodnotenie: meno (firma)“, predvyplnenie firmy cez `?firma=`.
+- Nová sekcia MikiForge Labs: Experiment 001 AI Trading Arena (`projects.arenaStatus`).
+- Navigácia: položka Hodnotenia; pätička: Napísať hodnotenie, MikiForge Labs.
+- Ochrana osobných údajov: hodnotenia (údaje, súhlas čl. 6 ods. 1 písm. a), lehoty), platné od 17. 11. 2026.
+- Nové súbory: `css/sekcie-v04.css`, `js/reviews.js`.
+
 ## v0.3 — 28. 10. 2026
 - Web je otvorený pre vyhľadávače: `index, follow` (ochrana osobných údajov ostáva `noindex`).
 - Štruktúrované údaje (JSON-LD): MikiForge Studio, zakladateľ Martin Mikulášik, e-mail, web; meta `author` — meno je čitateľné pre Google bez toho, aby bolo viditeľne na stránke.

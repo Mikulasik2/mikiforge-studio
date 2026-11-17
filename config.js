@@ -1,5 +1,5 @@
 /*
- * MikiForge Studio v0.1 — konfigurácia
+ * MikiForge Studio v0.4 — konfigurácia
  * ------------------------------------------------------------
  * Tu sa upravujú údaje, ktoré ešte nie sú finálne.
  * Nevkladajte sem žiadne API kľúče, heslá ani iné tajomstvá —
@@ -24,6 +24,29 @@ window.MIKIFORGE_CONFIG = {
     endpoint: "https://formspree.io/f/mqppqwvo", // Formspree → e-mail
     privacyInfoReady: true,  // ochrana-osobnych-udajov.html je doplnená
     timeoutMs: 15000
+  },
+
+  /* --- Formulár na hodnotenia (v0.4) ------------------------------
+   * Rovnaké pravidlá ako pri prihláške (mode + https endpoint + privacyInfoReady).
+   * endpoint: ak ostane prázdny, použije sa endpoint prihlášky (form.endpoint).
+   *           Odporúčanie: vo Formspree si založ druhý formulár „Hodnotenia“
+   *           a jeho adresu vlož sem, aby sa hodnotenia nemiešali s prihláškami.
+   * E-mail má vždy predmet „Hodnotenie: meno (firma)“, dá sa podľa neho filtrovať.
+   */
+  reviews: {
+    mode: "production",
+    endpoint: "",
+    privacyInfoReady: true,  // sekcia 2a v ochrane osobných údajov je doplnená
+    timeoutMs: 15000
+  },
+
+  /* --- Stavy projektov (v0.4) ---------------------------------------
+   * Pri novej verzii hry stačí zmeniť text tu.
+   * Prázdny text = ostane text priamo v HTML.
+   */
+  projects: {
+    mwStatus: "Vonku na Google Play · v0.34",
+    arenaStatus: "Live · paper trading"
   },
 
   /* --- Kontakt ----------------------------------------------------

@@ -1,0 +1,246 @@
+/* =========================================================
+   MikiForge Studio v0.4 — doplnky
+   Projekty (stav, viac tlačidiel), Hodnotenia, MikiForge Labs.
+   Načítava sa za css/styles.css a používa jeho premenné.
+   ========================================================= */
+
+/* ---------- Navigácia: 6 položiek sa musí zmestiť ---------- */
+@media (min-width: 961px) and (max-width: 1200px) {
+  .site-nav { gap: 18px; }
+  .site-nav__list { gap: 16px; }
+  .site-nav__list a { font-size: .9rem; }
+}
+
+/* ---------- Projekt pre firmy: poznámka pri rezervačnom systéme ---------- */
+.scope__aside { font-size: .9em; }
+.scope__aside a { color: var(--copper-on-cream); text-underline-offset: 3px; }
+
+/* ---------- Projekty: stav a viac tlačidiel ---------- */
+.project__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: -.2rem 0 1.2rem !important;
+  padding: .4em .9em;
+  border: 1px solid rgba(159, 212, 163, .45);
+  border-radius: 99px;
+  background: rgba(159, 212, 163, .06);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--text) !important;
+}
+.project__status-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(159, 212, 163, .18);
+}
+.project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+.project__actions .link-underline { color: var(--muted); }
+.project__actions .link-underline:hover { color: var(--copper-text); }
+
+/* ---------- Hodnotenia ---------- */
+.reviews {
+  padding: clamp(72px, 9vw, 128px) 0;
+  background: var(--bg-deep);
+  border-top: 1px solid var(--line);
+}
+.reviews__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: start;
+}
+.reviews__list { display: grid; gap: 24px; }
+.reviews__empty {
+  margin: 0;
+  padding: 28px 24px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 6px;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.review {
+  position: relative;
+  margin: 0;
+  padding: 28px 28px 24px;
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--copper);
+  border-radius: 6px;
+  background: var(--bg);
+}
+.review::before {
+  content: "\201E";               /* slovenská úvodzovka „ */
+  position: absolute;
+  right: 22px; top: -8px;
+  font-family: var(--serif);
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--copper);
+  opacity: .25;
+  pointer-events: none;
+}
+.review__stars {
+  margin: 0 0 .7rem;
+  color: var(--copper-text);
+  letter-spacing: .15em;
+  font-size: 1rem;
+}
+.review__text { margin: 0 0 1.2rem; }
+.review__text p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.08rem, 1rem + .35vw, 1.25rem);
+  line-height: 1.55;
+  color: #ece6db;
+}
+.review__text p + p { margin-top: .8em; }
+.review__author {
+  display: grid;
+  gap: 2px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: .92rem;
+}
+.review__author strong { font-weight: 700; }
+.review__author span { color: var(--muted); }
+.review__author a { color: var(--copper-text); text-underline-offset: 3px; }
+
+.reviews__form-title {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem);
+  font-weight: 500;
+  margin-bottom: .6rem;
+}
+.reviews__form-lead { color: #d9d2c6; max-width: 56ch; margin-bottom: 1.6rem; }
+
+/* hviezdičky ako voľba — 5 možností v jednom riadku */
+.choice--stars .choice__row { display: flex; flex-wrap: wrap; gap: 6px; }
+.choice--stars .choice__opt span {
+  gap: 0;
+  min-height: 42px;
+  padding: 8px 10px;
+  letter-spacing: 0;
+  font-size: .85rem;
+  color: var(--copper-text);
+}
+.choice--stars .choice__opt span::before { display: none; }   /* bez krúžku — vybraná voľba má medený rámik */
+
+/* súhlas so zverejnením */
+.consent__opt {
+  display: flex !important;
+  gap: 12px;
+  align-items: flex-start;
+  font-weight: 400 !important;
+  font-size: .95rem !important;
+  line-height: 1.5;
+  color: #e1dacd !important;
+  cursor: pointer;
+}
+.consent__opt input {
+  flex: 0 0 20px;
+  width: 20px; height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--copper-btn);
+  cursor: pointer;
+}
+.consent__opt input[aria-invalid="true"] { outline: 2px solid var(--error); outline-offset: 2px; }
+
+/* ---------- MikiForge Labs ---------- */
+.labs { padding: clamp(56px, 7vw, 96px) 0; }
+.labs__card {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 39px, rgba(247,243,235,.03) 39px 40px),
+    repeating-linear-gradient(0deg, transparent 0 39px, rgba(247,243,235,.03) 39px 40px),
+    var(--bg);
+}
+.labs__title {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 1.3rem + 2vw, 2.7rem);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 1rem;
+}
+.labs__lead { color: #d9d2c6; max-width: 46ch; margin: 0; }
+
+.lab {
+  padding: 24px 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-raised);
+}
+.lab__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: .6rem !important;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lab__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--copper-text);
+}
+.lab__live::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--copper);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lab__live::before { animation: lab-pulse 2.4s ease-in-out infinite; }
+}
+@keyframes lab-pulse { 50% { opacity: .35; } }
+.lab__title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 1.15rem + .9vw, 1.8rem);
+  font-weight: 500;
+  margin-bottom: .7rem;
+}
+.lab p { color: #ddd6ca; }
+.lab__note { font-size: .88rem; color: var(--muted) !important; font-style: italic; }
+.lab__chart {
+  width: 100%;
+  height: 52px;
+  margin: .4rem 0 1.4rem;
+  color: var(--copper);
+}
+
+/* ---------- Responzívne ---------- */
+@media (max-width: 960px) {
+  .reviews__grid, .labs__card { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .project__actions { flex-direction: column; align-items: stretch; gap: 8px; }
+  .project__actions .btn { width: 100%; }
+  .project__actions .link-underline { align-self: center; }
+  .review { padding: 22px 18px 20px; }
+  .review::before { font-size: 4rem; right: 14px; }
+  .choice--stars .choice__row { display: flex; }
+  .lab { padding: 20px 16px 22px; }
+  .lab .btn { width: 100%; }
+}
